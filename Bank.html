@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Baper Bank</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl text-center font-semibold mt-12">Welcome to <span class="text-red-500">Pocket Bank</span> Version 3.0 </h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-4 mx-auto w-9/12  p-3 mt-8">
+                <div class="bg-green-500 p-5 rounded-lg text-white font-semibold">
+                    <h3 class="text-3xl">Deposit Balance : TK <span id="Deposit-balance">00</span></h3>
+
+                    
+                </div>
+                <div class="bg-red-500 p-5 rounded-lg text-white font-semibold">
+                    <h3 class="text-3xl">Withdraw Balance : TK <span id="Withdraw-balance">00</span></h3>
+
+                    
+                </div>
+                <div class="bg-yellow-500 p-5 rounded-lg text-white font-semibold">
+                    <h3 class="text-3xl">Initial Balance : TK <span id="Initial-balance">40000</span></h3>
+
+                    
+                </div>
+             
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-2 gap-4 mx-auto w-9/12 mt-8  ">
+                <div class="bg-green-300 rounded-lg p-5">
+                    <h3 class="text-2xl font-semibold">Enter Your Deposit Ammount Here :</h3>
+                    <input type="text" placeholder="Deposit Ammount" class="block rounded-lg mt-4" id="depoinput">
+                    <button id="DepositSubmit" class="bg-green-500 font-semibold px-3 py-2 text-white rounded-lg hover:bg-green-600 mt-4 mx-auto" >Submit</button>
+                </div>
+                <div class="bg-red-300 rounded-lg p-5">
+                    <h3 class="text-2xl font-semibold">Enter Your Deposit Ammount Here :</h3>
+                    <input type="text" placeholder="Deposit Ammount" class="block rounded-lg mt-4" id="Withinput">
+                    <button id="WithdrawSubmit" class="bg-red-500 font-semibold px-3 py-2 text-white rounded-lg hover:bg-red-600 mt-4 mx-auto ">Submit</button>
+                </div>
+                
+            </div>
+        </section>
+        <section>
+            <div class="bg-blue-500 text-center mx-auto w-3/6 mt-8 rounded-lg">
+                <h2 class="pt-2 text-2xl">Apply Coupon Code Here For 8% interest Rate : </h2>
+                <input type="text" class="block w-80 mx-auto mt-4 rounded-lg" id="CouponArea">
+                <button id="CouponButton" class="mt-4 bg-blue-600 px-3 py-2 mb-2 rounded-lg font-semibold hover:bg-red-500 hover:text-white">Apply</button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="JS/function.js"></script>
+    <script src="JS/deposit.js"></script>
+    <script src="JS/withdraw.js"></script>
+    <script src="JS/Interest.js"></script>
+
+</body>
+</html>
